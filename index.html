@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>FizzBuzz</h1>
+      <form>
+        <input
+          id="formInput"
+          type="tel"
+          size="4"
+          maxlength="3"
+          onchange="changeHandler(this)"
+        />
+        <input type="button" id="submit" value="Submit" />
+      </form>
+      <div>
+        <p id="output"></p>
+      </div>
+    </div>
+
+    <script>
+      function changeHandler(val) {
+        if (Number(val.value) > 100) {
+          val.value = 100;
+        }
+      }
+      var submit = document.getElementById("submit");
+
+      submit.onclick = function () {
+        var formInput = document.getElementById("formInput").value;
+
+        if ((formInput === "")) {
+          var result = "Error";
+        } else if (formInput % 5 === 0 && formInput % 3 === 0) {
+          var result = "FizzBuzz";
+        } else if (formInput % 3 === 0) {
+          var result = "Fizz";
+        } else if (formInput % 5 === 0) {
+          var result = "Buzz";
+        } else {
+          var result = "Error";
+        }
+        document.getElementById("output").innerHTML = result;
+      };
+    </script>
+  </body>
+</html>
