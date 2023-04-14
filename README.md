@@ -21,4 +21,4 @@ For your own use, just clone this project and rename it or copy the code straigh
 If you found any issues or you would like to suggest an improvement to this project, please submit an issue using the issues tab above.!
 
 ## Image of the project
-[![Alt text](https://user-images.githubusercontent.com/129946468/231964526-dd46e189-7376-4fa3-b52b-28a93d905786.png)
+![Alt text](https://user-images.githubusercontent.com/129946468/231964526-dd46e189-7376-4fa3-b52b-28a93d905786.png)
